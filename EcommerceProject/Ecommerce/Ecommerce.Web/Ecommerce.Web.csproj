@@ -124,6 +124,18 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Controllers\Register\RegCityController.cs" />
+    <Compile Include="Controllers\Register\RegCountryController.cs" />
+    <Compile Include="Controllers\Register\RegMeasurementUnitController.cs" />
+    <Compile Include="Controllers\Register\RegProductBrandController.cs" />
+    <Compile Include="Controllers\Register\RegProductController.cs" />
+    <Compile Include="Controllers\Register\RegProductGroupController.cs" />
+    <Compile Include="Controllers\Register\RegProviderController.cs" />
+    <Compile Include="Controllers\Register\RegStateController.cs" />
+    <Compile Include="Controllers\Register\RegStockuserController.cs" />
+    <Compile Include="Controllers\Register\RegStorageLocalController.cs" />
+    <Compile Include="Controllers\Register\RegUserProfileController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -140,10 +152,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Dockerfile" />
-    <None Include=".dockerignore">
-      <DependentUpon>Dockerfile</DependentUpon>
-    </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -166,9 +174,19 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\RegCity\Index.cshtml" />
+    <Content Include="Views\RegCountry\Index.cshtml" />
+    <Content Include="Views\Register\Index.cshtml" />
+    <Content Include="Views\RegMeasurementUnit\Index.cshtml" />
+    <Content Include="Views\RegProduct\Index.cshtml" />
+    <Content Include="Views\RegProductBrand\Index.cshtml" />
+    <Content Include="Views\RegProductGroup\Index.cshtml" />
+    <Content Include="Views\RegProvider\Index.cshtml" />
+    <Content Include="Views\RegState\Index.cshtml" />
+    <Content Include="Views\RegStockuser\Index.cshtml" />
+    <Content Include="Views\RegStorageLocal\Index.cshtml" />
+    <Content Include="Views\RegUserProfile\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

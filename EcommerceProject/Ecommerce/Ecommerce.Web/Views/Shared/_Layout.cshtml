@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Easy Ecommerce</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -16,13 +16,36 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Easy Ecommerce", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Registers
+                            <span class="carret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Product Group", "Index", "RegProductGroup")</li>
+                            <li>@Html.ActionLink("Prouct Brand", "Index", "RegProductBrand")</li>
+                            <li>@Html.ActionLink("Storage Local", "Index", "RegStorageLocal")</li>
+                            <li>@Html.ActionLink("Measurement Unit", "Index", "RegMeasurementUnit")</li>
+                            <li>@Html.ActionLink("Product", "Index", "RegProduct")</li>
+                            <li class="nav-divider"></li>
+                            <li>@Html.ActionLink("Countrires", "Index", "RegCountry")</li>
+                            <li>@Html.ActionLink("States", "Index", "RegState")</li>
+                            <li>@Html.ActionLink("Cities", "Index", "RegCity")</li>
+                            <li>@Html.ActionLink("Providers", "Index", "RegProvider")</li>
+                            <li class="nav-divider"></li>
+                            <li>@Html.ActionLink("User Profiles", "Index", "RegUserProfile")</li>
+                            <li>@Html.ActionLink("Stock Users", "Index", "RegStockuser")</li>
+                        </ul>
+                    
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
                 </ul>
             </div>
         </div>
@@ -31,7 +54,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Lucas Technology Services</p>
         </footer>
     </div>
 
